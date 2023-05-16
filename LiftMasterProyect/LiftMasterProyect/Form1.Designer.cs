@@ -42,23 +42,29 @@
             this.open6 = new System.Windows.Forms.PictureBox();
             this.close1 = new System.Windows.Forms.PictureBox();
             this.open1 = new System.Windows.Forms.PictureBox();
-            this.radioButtonUp6 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDown6 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDown5 = new System.Windows.Forms.RadioButton();
-            this.radioButtonUp5 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDown4 = new System.Windows.Forms.RadioButton();
-            this.radioButtonUp4 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDown3 = new System.Windows.Forms.RadioButton();
-            this.radioButtonUp3 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDown2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonUp2 = new System.Windows.Forms.RadioButton();
-            this.radioButtonDown1 = new System.Windows.Forms.RadioButton();
-            this.radioButtonUp1 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_Pisos = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_Personas = new System.Windows.Forms.TextBox();
             this.btn_process = new System.Windows.Forms.Button();
+            this.btn_stateclose6 = new System.Windows.Forms.Button();
+            this.btn_stateopen6 = new System.Windows.Forms.Button();
+            this.btn_stateopen5 = new System.Windows.Forms.Button();
+            this.btn_stateclose5 = new System.Windows.Forms.Button();
+            this.btn_stateopen4 = new System.Windows.Forms.Button();
+            this.btn_stateclose4 = new System.Windows.Forms.Button();
+            this.btn_stateopen3 = new System.Windows.Forms.Button();
+            this.btn_stateclose3 = new System.Windows.Forms.Button();
+            this.btn_stateopen2 = new System.Windows.Forms.Button();
+            this.btn_stateclose2 = new System.Windows.Forms.Button();
+            this.btn_stateopen1 = new System.Windows.Forms.Button();
+            this.btn_stateclose1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_Peso = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.list_pesos = new System.Windows.Forms.ListBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.open2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.close2)).BeginInit();
@@ -135,7 +141,6 @@
             this.close4.Size = new System.Drawing.Size(49, 50);
             this.close4.TabIndex = 6;
             this.close4.TabStop = false;
-            this.close4.Click += new System.EventHandler(this.close4_Click);
             // 
             // open4
             // 
@@ -147,7 +152,6 @@
             this.open4.TabIndex = 5;
             this.open4.TabStop = false;
             this.open4.Visible = false;
-            this.open4.Click += new System.EventHandler(this.open4_Click);
             // 
             // close5
             // 
@@ -212,197 +216,250 @@
             this.open1.TabIndex = 11;
             this.open1.TabStop = false;
             // 
-            // radioButtonUp6
-            // 
-            this.radioButtonUp6.AutoSize = true;
-            this.radioButtonUp6.Location = new System.Drawing.Point(396, 174);
-            this.radioButtonUp6.Name = "radioButtonUp6";
-            this.radioButtonUp6.Size = new System.Drawing.Size(51, 19);
-            this.radioButtonUp6.TabIndex = 13;
-            this.radioButtonUp6.Text = "Sube";
-            this.radioButtonUp6.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDown6
-            // 
-            this.radioButtonDown6.AutoSize = true;
-            this.radioButtonDown6.Location = new System.Drawing.Point(472, 174);
-            this.radioButtonDown6.Name = "radioButtonDown6";
-            this.radioButtonDown6.Size = new System.Drawing.Size(47, 19);
-            this.radioButtonDown6.TabIndex = 14;
-            this.radioButtonDown6.Text = "Baja";
-            this.radioButtonDown6.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDown5
-            // 
-            this.radioButtonDown5.AutoSize = true;
-            this.radioButtonDown5.Location = new System.Drawing.Point(472, 225);
-            this.radioButtonDown5.Name = "radioButtonDown5";
-            this.radioButtonDown5.Size = new System.Drawing.Size(47, 19);
-            this.radioButtonDown5.TabIndex = 16;
-            this.radioButtonDown5.Text = "Baja";
-            this.radioButtonDown5.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonUp5
-            // 
-            this.radioButtonUp5.AutoSize = true;
-            this.radioButtonUp5.Location = new System.Drawing.Point(396, 225);
-            this.radioButtonUp5.Name = "radioButtonUp5";
-            this.radioButtonUp5.Size = new System.Drawing.Size(51, 19);
-            this.radioButtonUp5.TabIndex = 15;
-            this.radioButtonUp5.Text = "Sube";
-            this.radioButtonUp5.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDown4
-            // 
-            this.radioButtonDown4.AutoSize = true;
-            this.radioButtonDown4.Location = new System.Drawing.Point(472, 280);
-            this.radioButtonDown4.Name = "radioButtonDown4";
-            this.radioButtonDown4.Size = new System.Drawing.Size(47, 19);
-            this.radioButtonDown4.TabIndex = 18;
-            this.radioButtonDown4.Text = "Baja";
-            this.radioButtonDown4.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonUp4
-            // 
-            this.radioButtonUp4.AutoSize = true;
-            this.radioButtonUp4.Location = new System.Drawing.Point(396, 280);
-            this.radioButtonUp4.Name = "radioButtonUp4";
-            this.radioButtonUp4.Size = new System.Drawing.Size(51, 19);
-            this.radioButtonUp4.TabIndex = 17;
-            this.radioButtonUp4.Text = "Sube";
-            this.radioButtonUp4.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDown3
-            // 
-            this.radioButtonDown3.AutoSize = true;
-            this.radioButtonDown3.Location = new System.Drawing.Point(472, 335);
-            this.radioButtonDown3.Name = "radioButtonDown3";
-            this.radioButtonDown3.Size = new System.Drawing.Size(47, 19);
-            this.radioButtonDown3.TabIndex = 20;
-            this.radioButtonDown3.Text = "Baja";
-            this.radioButtonDown3.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonUp3
-            // 
-            this.radioButtonUp3.AutoSize = true;
-            this.radioButtonUp3.Location = new System.Drawing.Point(396, 335);
-            this.radioButtonUp3.Name = "radioButtonUp3";
-            this.radioButtonUp3.Size = new System.Drawing.Size(51, 19);
-            this.radioButtonUp3.TabIndex = 19;
-            this.radioButtonUp3.Text = "Sube";
-            this.radioButtonUp3.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDown2
-            // 
-            this.radioButtonDown2.AutoSize = true;
-            this.radioButtonDown2.Location = new System.Drawing.Point(472, 389);
-            this.radioButtonDown2.Name = "radioButtonDown2";
-            this.radioButtonDown2.Size = new System.Drawing.Size(47, 19);
-            this.radioButtonDown2.TabIndex = 22;
-            this.radioButtonDown2.Text = "Baja";
-            this.radioButtonDown2.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonUp2
-            // 
-            this.radioButtonUp2.AutoSize = true;
-            this.radioButtonUp2.Location = new System.Drawing.Point(396, 389);
-            this.radioButtonUp2.Name = "radioButtonUp2";
-            this.radioButtonUp2.Size = new System.Drawing.Size(51, 19);
-            this.radioButtonUp2.TabIndex = 21;
-            this.radioButtonUp2.Text = "Sube";
-            this.radioButtonUp2.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDown1
-            // 
-            this.radioButtonDown1.AutoSize = true;
-            this.radioButtonDown1.Checked = true;
-            this.radioButtonDown1.Location = new System.Drawing.Point(472, 433);
-            this.radioButtonDown1.Name = "radioButtonDown1";
-            this.radioButtonDown1.Size = new System.Drawing.Size(47, 19);
-            this.radioButtonDown1.TabIndex = 24;
-            this.radioButtonDown1.TabStop = true;
-            this.radioButtonDown1.Text = "Baja";
-            this.radioButtonDown1.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonUp1
-            // 
-            this.radioButtonUp1.AutoSize = true;
-            this.radioButtonUp1.Location = new System.Drawing.Point(396, 433);
-            this.radioButtonUp1.Name = "radioButtonUp1";
-            this.radioButtonUp1.Size = new System.Drawing.Size(51, 19);
-            this.radioButtonUp1.TabIndex = 23;
-            this.radioButtonUp1.Text = "Sube";
-            this.radioButtonUp1.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(618, 166);
+            this.label1.Location = new System.Drawing.Point(883, 153);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 37);
+            this.label1.Size = new System.Drawing.Size(169, 37);
             this.label1.TabIndex = 25;
-            this.label1.Text = "Piso";
+            this.label1.Text = "Pisos a pasar";
             // 
-            // textBox1
+            // txt_Pisos
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(618, 206);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(138, 23);
-            this.textBox1.TabIndex = 26;
+            this.txt_Pisos.Enabled = false;
+            this.txt_Pisos.Location = new System.Drawing.Point(883, 193);
+            this.txt_Pisos.Name = "txt_Pisos";
+            this.txt_Pisos.Size = new System.Drawing.Size(138, 23);
+            this.txt_Pisos.TabIndex = 26;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(618, 265);
+            this.label2.Location = new System.Drawing.Point(883, 237);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(275, 37);
             this.label2.TabIndex = 27;
             this.label2.Text = "Cantidad de personas";
             // 
-            // textBox2
+            // txt_Personas
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(618, 305);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(138, 23);
-            this.textBox2.TabIndex = 28;
+            this.txt_Personas.Enabled = false;
+            this.txt_Personas.Location = new System.Drawing.Point(883, 277);
+            this.txt_Personas.Name = "txt_Personas";
+            this.txt_Personas.Size = new System.Drawing.Size(138, 23);
+            this.txt_Personas.TabIndex = 28;
             // 
             // btn_process
             // 
             this.btn_process.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_process.Location = new System.Drawing.Point(619, 377);
+            this.btn_process.Location = new System.Drawing.Point(883, 419);
             this.btn_process.Name = "btn_process";
             this.btn_process.Size = new System.Drawing.Size(81, 31);
             this.btn_process.TabIndex = 29;
             this.btn_process.Text = "Ejecutar Proceso";
             this.btn_process.UseVisualStyleBackColor = true;
+            this.btn_process.Click += new System.EventHandler(this.btn_process_Click);
+            // 
+            // btn_stateclose6
+            // 
+            this.btn_stateclose6.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_stateclose6.Location = new System.Drawing.Point(406, 184);
+            this.btn_stateclose6.Name = "btn_stateclose6";
+            this.btn_stateclose6.Size = new System.Drawing.Size(23, 23);
+            this.btn_stateclose6.TabIndex = 30;
+            this.btn_stateclose6.UseVisualStyleBackColor = false;
+            // 
+            // btn_stateopen6
+            // 
+            this.btn_stateopen6.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_stateopen6.Location = new System.Drawing.Point(542, 186);
+            this.btn_stateopen6.Name = "btn_stateopen6";
+            this.btn_stateopen6.Size = new System.Drawing.Size(23, 23);
+            this.btn_stateopen6.TabIndex = 42;
+            this.btn_stateopen6.UseVisualStyleBackColor = false;
+            // 
+            // btn_stateopen5
+            // 
+            this.btn_stateopen5.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_stateopen5.Location = new System.Drawing.Point(542, 237);
+            this.btn_stateopen5.Name = "btn_stateopen5";
+            this.btn_stateopen5.Size = new System.Drawing.Size(23, 23);
+            this.btn_stateopen5.TabIndex = 44;
+            this.btn_stateopen5.UseVisualStyleBackColor = false;
+            // 
+            // btn_stateclose5
+            // 
+            this.btn_stateclose5.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_stateclose5.Location = new System.Drawing.Point(406, 235);
+            this.btn_stateclose5.Name = "btn_stateclose5";
+            this.btn_stateclose5.Size = new System.Drawing.Size(23, 23);
+            this.btn_stateclose5.TabIndex = 43;
+            this.btn_stateclose5.UseVisualStyleBackColor = false;
+            // 
+            // btn_stateopen4
+            // 
+            this.btn_stateopen4.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_stateopen4.Location = new System.Drawing.Point(542, 292);
+            this.btn_stateopen4.Name = "btn_stateopen4";
+            this.btn_stateopen4.Size = new System.Drawing.Size(23, 23);
+            this.btn_stateopen4.TabIndex = 46;
+            this.btn_stateopen4.UseVisualStyleBackColor = false;
+            // 
+            // btn_stateclose4
+            // 
+            this.btn_stateclose4.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_stateclose4.Location = new System.Drawing.Point(406, 290);
+            this.btn_stateclose4.Name = "btn_stateclose4";
+            this.btn_stateclose4.Size = new System.Drawing.Size(23, 23);
+            this.btn_stateclose4.TabIndex = 45;
+            this.btn_stateclose4.UseVisualStyleBackColor = false;
+            // 
+            // btn_stateopen3
+            // 
+            this.btn_stateopen3.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_stateopen3.Location = new System.Drawing.Point(542, 343);
+            this.btn_stateopen3.Name = "btn_stateopen3";
+            this.btn_stateopen3.Size = new System.Drawing.Size(23, 23);
+            this.btn_stateopen3.TabIndex = 48;
+            this.btn_stateopen3.UseVisualStyleBackColor = false;
+            // 
+            // btn_stateclose3
+            // 
+            this.btn_stateclose3.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_stateclose3.Location = new System.Drawing.Point(406, 341);
+            this.btn_stateclose3.Name = "btn_stateclose3";
+            this.btn_stateclose3.Size = new System.Drawing.Size(23, 23);
+            this.btn_stateclose3.TabIndex = 47;
+            this.btn_stateclose3.UseVisualStyleBackColor = false;
+            // 
+            // btn_stateopen2
+            // 
+            this.btn_stateopen2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_stateopen2.Location = new System.Drawing.Point(542, 389);
+            this.btn_stateopen2.Name = "btn_stateopen2";
+            this.btn_stateopen2.Size = new System.Drawing.Size(23, 23);
+            this.btn_stateopen2.TabIndex = 50;
+            this.btn_stateopen2.UseVisualStyleBackColor = false;
+            // 
+            // btn_stateclose2
+            // 
+            this.btn_stateclose2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_stateclose2.Location = new System.Drawing.Point(406, 387);
+            this.btn_stateclose2.Name = "btn_stateclose2";
+            this.btn_stateclose2.Size = new System.Drawing.Size(23, 23);
+            this.btn_stateclose2.TabIndex = 49;
+            this.btn_stateclose2.UseVisualStyleBackColor = false;
+            // 
+            // btn_stateopen1
+            // 
+            this.btn_stateopen1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_stateopen1.Location = new System.Drawing.Point(542, 441);
+            this.btn_stateopen1.Name = "btn_stateopen1";
+            this.btn_stateopen1.Size = new System.Drawing.Size(23, 23);
+            this.btn_stateopen1.TabIndex = 52;
+            this.btn_stateopen1.UseVisualStyleBackColor = false;
+            // 
+            // btn_stateclose1
+            // 
+            this.btn_stateclose1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_stateclose1.Location = new System.Drawing.Point(406, 439);
+            this.btn_stateclose1.Name = "btn_stateclose1";
+            this.btn_stateclose1.Size = new System.Drawing.Size(23, 23);
+            this.btn_stateclose1.TabIndex = 51;
+            this.btn_stateclose1.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(406, 153);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 20);
+            this.label3.TabIndex = 53;
+            this.label3.Text = "En movimiento";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(542, 153);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(71, 20);
+            this.label4.TabIndex = 54;
+            this.label4.Text = "Detenido";
+            // 
+            // txt_Peso
+            // 
+            this.txt_Peso.Enabled = false;
+            this.txt_Peso.Location = new System.Drawing.Point(883, 365);
+            this.txt_Peso.Name = "txt_Peso";
+            this.txt_Peso.Size = new System.Drawing.Size(138, 23);
+            this.txt_Peso.TabIndex = 56;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(883, 325);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(248, 37);
+            this.label5.TabIndex = 55;
+            this.label5.Text = "Peso en el Ascensor";
+            // 
+            // list_pesos
+            // 
+            this.list_pesos.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.list_pesos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.list_pesos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.list_pesos.FormattingEnabled = true;
+            this.list_pesos.ItemHeight = 20;
+            this.list_pesos.Location = new System.Drawing.Point(650, 200);
+            this.list_pesos.Name = "list_pesos";
+            this.list_pesos.Size = new System.Drawing.Size(156, 200);
+            this.list_pesos.TabIndex = 57;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(650, 158);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 20);
+            this.label6.TabIndex = 58;
+            this.label6.Text = "Pesos";
             // 
             // Master
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(964, 554);
+            this.ClientSize = new System.Drawing.Size(1181, 554);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.list_pesos);
+            this.Controls.Add(this.txt_Peso);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btn_stateopen1);
+            this.Controls.Add(this.btn_stateclose1);
+            this.Controls.Add(this.btn_stateopen2);
+            this.Controls.Add(this.btn_stateclose2);
+            this.Controls.Add(this.btn_stateopen3);
+            this.Controls.Add(this.btn_stateclose3);
+            this.Controls.Add(this.btn_stateopen4);
+            this.Controls.Add(this.btn_stateclose4);
+            this.Controls.Add(this.btn_stateopen5);
+            this.Controls.Add(this.btn_stateclose5);
+            this.Controls.Add(this.btn_stateopen6);
+            this.Controls.Add(this.btn_stateclose6);
             this.Controls.Add(this.btn_process);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_Personas);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_Pisos);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.radioButtonDown1);
-            this.Controls.Add(this.radioButtonUp1);
-            this.Controls.Add(this.radioButtonDown2);
-            this.Controls.Add(this.radioButtonUp2);
-            this.Controls.Add(this.radioButtonDown3);
-            this.Controls.Add(this.radioButtonUp3);
-            this.Controls.Add(this.radioButtonDown4);
-            this.Controls.Add(this.radioButtonUp4);
-            this.Controls.Add(this.radioButtonDown5);
-            this.Controls.Add(this.radioButtonUp5);
-            this.Controls.Add(this.radioButtonDown6);
-            this.Controls.Add(this.radioButtonUp6);
             this.Controls.Add(this.close1);
             this.Controls.Add(this.open1);
             this.Controls.Add(this.close6);
@@ -451,22 +508,28 @@
         private PictureBox open6;
         private PictureBox close1;
         private PictureBox open1;
-        private RadioButton radioButtonUp6;
-        private RadioButton radioButtonDown6;
-        private RadioButton radioButtonDown5;
-        private RadioButton radioButtonUp5;
-        private RadioButton radioButtonDown4;
-        private RadioButton radioButtonUp4;
-        private RadioButton radioButtonDown3;
-        private RadioButton radioButtonUp3;
-        private RadioButton radioButtonDown2;
-        private RadioButton radioButtonUp2;
-        private RadioButton radioButtonDown1;
-        private RadioButton radioButtonUp1;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txt_Pisos;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox txt_Personas;
         private Button btn_process;
+        private Button btn_stateclose6;
+        private Button btn_stateopen6;
+        private Button btn_stateopen5;
+        private Button btn_stateclose5;
+        private Button btn_stateopen4;
+        private Button btn_stateclose4;
+        private Button btn_stateopen3;
+        private Button btn_stateclose3;
+        private Button btn_stateopen2;
+        private Button btn_stateclose2;
+        private Button btn_stateopen1;
+        private Button btn_stateclose1;
+        private Label label3;
+        private Label label4;
+        private TextBox txt_Peso;
+        private Label label5;
+        private ListBox list_pesos;
+        private Label label6;
     }
 }
