@@ -16,25 +16,18 @@ namespace LiftMasterProyect.Logic
             int CantMinPisos = _Constants.GetCantMinPisos();
 
             int[] pisos = new int[cantidadPersonas];
-            
             Random random = new Random();
 
-            int anterior = 0;
-
-            for (int i = CantMinPisos; i < cantidadPersonas; i++)
+            for (int i = 0; i < cantidadPersonas; i++)
             {
+                int numero = random.Next(CantMinPisos, CantMaxPisos);
 
-                int aleatorio = random.Next(CantMinPisos, cantidadPersonas);
-                if (aleatorio != anterior && !pisos.Contains(aleatorio))
-                {
-                    pisos[i] = aleatorio;
-                    anterior = aleatorio;
-                }
-                else
-                {
+                if (Array.IndexOf(pisos, numero) != -1)
                     pisos[i] = 0;
-                }
+                else
+                    pisos[i] = numero;
             }
+
 
             return pisos;
         }
@@ -61,7 +54,7 @@ namespace LiftMasterProyect.Logic
                 }
                 else
                 {
-                    break;
+                    personas[i] = Tuple.Create(0);
                 }
             }
 

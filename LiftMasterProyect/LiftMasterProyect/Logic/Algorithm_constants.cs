@@ -9,9 +9,9 @@ namespace LiftMasterProyect.Logic
     internal class Algorithm_constants
     {
         public static int CantMaxPisos { get; } = 6;
-        public static int CantMinPisos { get; } = 1;
+        public static int CantMinPisos { get; } = 2;
         public static int MaxPeso { get; } = 700;
-        public static int CantMaxPersonas { get; } = 10;
+        public static int CantMaxPersonas { get; } = 7;
 
         public int GetCantMaxPisos()
         {
