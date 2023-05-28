@@ -26,6 +26,8 @@ namespace LiftMasterProyect
 
         private void btn_process_Click(object sender, EventArgs e)
         {
+            Reset_All();
+
             Logic.Elevator_algorithm _Algorithm = new Logic.Elevator_algorithm();
             Logic.Algorithm_constants _Constants = new Logic.Algorithm_constants();
 
@@ -72,6 +74,7 @@ namespace LiftMasterProyect
             util.EscribirLog("Pisos a recorrer: " + pisos_text.ToString());
             #endregion
 
+            
             State_Color_Button_Init();
         }
 
@@ -87,7 +90,7 @@ namespace LiftMasterProyect
 
             if (count >= _pisosTotalGlobal)
             {
-                State_Floors_Movement(Color.Gray);
+                State_Color_Button_Init();
                 _Timer.Stop();
             }
             else
@@ -153,18 +156,28 @@ namespace LiftMasterProyect
             switch (piso)
             {
                 case 2:
+                    open2.Visible = true;
+                    close2.Visible = false;
                     State_Floors_Stop(Color.Red, piso);
                     break;
                 case 3:
+                    open3.Visible = true;
+                    close3.Visible = false;
                     State_Floors_Stop(Color.Red, piso);
                     break;
                 case 4:
+                    open4.Visible = true;
+                    close4.Visible = false;
                     State_Floors_Stop(Color.Red, piso);
                     break;
                 case 5:
+                    open5.Visible = true;
+                    close5.Visible = false;
                     State_Floors_Stop(Color.Red, piso);
                     break;
                 case 6:
+                    open6.Visible = true;
+                    close6.Visible = false;
                     State_Floors_Stop(Color.Red, piso);
                     break;
                 default:
@@ -201,6 +214,9 @@ namespace LiftMasterProyect
                         break;
                 }
             }
+
+            open1.Visible = false;
+            close1.Visible = true;
             util.EscribirLog("Se realiza configuracion de botones de espera dependiendo de los pisos a recorrer");
         }
 
@@ -249,6 +265,27 @@ namespace LiftMasterProyect
             }
         }
 
+        private void Reset_All()
+        {
+            //Reinicio de colores de los botones de estado
+            State_Color_Button_Init();
+
+            //Reinicio de imagenes ascensor
+            open1.Visible = true;
+            close1.Visible = false;
+            open2.Visible = false;
+            close2.Visible = true;
+            open3.Visible = false;
+            close3.Visible = true;
+            open4.Visible = false;
+            close4.Visible = true;
+            open5.Visible = false;
+            close5.Visible = true;
+            open6.Visible = false;
+            close6.Visible = true;
+
+            count = 0;
+        }
         #endregion
     }
 }
